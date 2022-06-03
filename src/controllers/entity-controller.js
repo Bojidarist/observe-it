@@ -1,7 +1,5 @@
-const {
-    entityOutput,
-  } = require('../repositories/entity-output-repository');
+const { entityOutput } = require('../repositories/entity-output-repository');
 
 exports.entityOutput = (req, res, next) => {
-    res.json(entityOutput(req.params.entityId))
+  res.json(entityOutput(req.params.entityId));
 };

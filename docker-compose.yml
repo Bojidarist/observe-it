@@ -2,7 +2,10 @@ version: "3.9"
 services:
   app:
     build: .
+    command: docker-entrypoint
     volumes:
       - ./src:/app
     ports:
       - "3000:3000"
+    environment: 
+    - NODE_ENV=development

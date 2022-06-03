@@ -1,0 +1,10 @@
+#!/bin/bash
+
+npm install
+
+if [ "$NODE_ENV" == "production" ] ; then
+  npm run start
+else
+  npm install -g nodemon
+  npm run dev
+fi

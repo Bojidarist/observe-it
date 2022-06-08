@@ -3,8 +3,8 @@
 npm install
 
 if [ "$NODE_ENV" == "production" ] ; then
-  npm run start
+  npm --cache /var/cache/ run start
 else
   npm install -g nodemon
-  npm run dev
+  npm --cache /var/cache/ run dev
 fi

@@ -1,0 +1,7 @@
+{
+  "ext": "js,mjs,coffee,litcoffee,json,pug",
+  "events": {
+    "restart": "npm run tailwind:css",
+    "start": "npm run tailwind:css"
+  }
+}
